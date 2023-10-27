@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Kitchen</title>
+        <style>
+            body{
+                background-image: url(https://img.freepik.com/free-photo/abandoned-room-with-table-middle-shelves-against-wall-near-window_181624-45199.jpg?size=626&ext=jpg&ga=GA1.1.1439893118.1698287048&semt=ais);
+            }
+            a{
+                color: orange;
+            }
+            h1{
+                color:blueviolet;
+            }
+            .someDiv{
+                text-align: center;
+                width: 300px;
+                height: 200px;
+            }
+            h2{
+                color:white;
+            }
+        </style>
+        <script>
+            function deathMachine() {
+                let former = document.getElementById("someDiv");
+                former.innerHTML = "<h2>Oh no! You pressed the button and you died in a kitchen explosion<h2><br />" + "<a href=" + "House.html"+ ">Reset your life</a>";
+            }
+        </script> 
+    </head>
+    
+    <body>
+        <h1>Lets dine in!</h1>
+        <h2>There is a button here that provides food for you!</h2>
+        <div id="someDiv"><button onclick="deathMachine()">Press the button to get food!</button></div>
+    </body>
+</html>

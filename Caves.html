@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Caves</title>
+        <style>
+            body{
+                background-image: url(https://www.rd.com/wp-content/uploads/2020/05/GettyImages-638387674.jpg?fit=700%2C467?fit=700,700);
+            }
+            h1{
+                color:white;
+            }
+            h2{
+                color:white;
+            }
+            a{
+                color:orange;
+            }
+            .result{
+                color:white;
+            }
+            .numlog{
+                color:white;
+            }
+        </style>
+        <script src = "minigame.js"></script>
+    </head>
+    
+    <body onload="initialize()">
+        <h1>A big cave with even bigger monsters inside.</h1>
+        <h2>There is a sign here with a puzzle. Maybe it's the way out! The creatures are coming...</h2>
+        <div id="quit">
+            <a href="House.html">Let's skeddadle out of here</a>
+            <br/>
+            <button onclick = "addOne();">Add 1</button>
+            <button onclick = "subOne();">Subtract 1</button> <br>
+            <button onclick = "addFive();">Add 5</button>
+            <button onclick = "subFive();">Subtract 5</button> <br>
+            <button onclick= "add25();">Add 25</button>
+            <button onclick = "sub25();">Subtract 25</button> <br>
+            <button onclick = "commitGuess();">Commit your guess!</button>
+            <div id = "result">Current Number: 50</div>
+        
+            <h2>Log of Numbers</h2>
+            <div id = "numLog"></div>
+        </div>
+    </body>
+</html>
